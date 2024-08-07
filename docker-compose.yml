@@ -1,0 +1,12 @@
+version: '3'
+services:
+  game:
+    build: ./shooting-game
+    ports:
+      - "8000:8000"
+  leaderboard:
+    build: ./leaderboard
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=sqlite:///leaderboard.db
