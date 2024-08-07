@@ -76,7 +76,7 @@ while running:
             'player_name': 'Player1',  # Replace with dynamic player name
             'score': player_score
         }
-        response = requests.post('http://172.31.26.96:5000/leaderboard', json=score_data)
+        response = requests.post('http://52.91.197.4:5000/leaderboard', json=score_data)
         print(response.json())
 
         # Wait for a few seconds before quitting
